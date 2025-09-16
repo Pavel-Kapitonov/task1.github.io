@@ -1,0 +1,150 @@
+<!-- Капитонов Павел -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Основная страница</title>
+
+    <!-- Убираю лишние отступы -->
+  <style>
+    p {
+      margin: 0;
+      padding: 0;
+    }
+    ul, ol {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Задание 1.</h1>
+  <p>Сверстать HTML 5 страницу с маркированным списком гиперссылок и формой.</p> 
+  <p>Работу выполнил: Капитонов Павел ПМ 21/2</p> 
+
+  <!-- Гиперсыллки -->
+
+  <h2 style="margin-top: 40px">Список гиперсыллок</h2>
+
+  <ul>
+    <li><a href="http://kubsu.ru">1)Кубгу</a></li>
+    <li><a href="https://www.kubsu.ru/ ">2)Кубгу</a></li>
+    <li><p>3)</p></li>
+    <li><a href="https://www.kubsu.ru/"><img src="https://upload.wikimedia.org/wikipedia/ru/a/a2/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%9A%D1%83%D0%B1%D0%93%D0%A3.png" width="300" height="300" alt="Кубгу"></a></li>
+    <li><a href="inside.html">4)Перейти на внутреннюю страницу</a></li>
+    <li><a href="index.html">5)Перейти на главную страницу</a></li>
+    <li><a href="#element_id">6)Сыллка на фрагмент страницы</a></li>
+    <li><a href="http://example.com?param1=value1&param2=value2&param3=value3">7) Ссылка</a></li>
+    <li><a href="index.html?id=123">8) Перейти на id=123</a></li>
+    <li><a href="inside.html">9) Ссылка на страницу в каталоге</a></li>
+    <li><a href="about/aboutus.html">10) Сыллка в каталоге about</a></li>
+    <li><a href="../index.html">11) На страницу в каталоге уровнем выше</a></li>
+    <li><a href="../../index.html">12) На страницу в каталоге 2 уровнями выше</a></li>
+    <li><p>13) Это <a href="index.html">контекстная сыллка</a> в параграфе</p></li>
+    <li><a href="https://www.kubsu.ru/#element_id">14) Перейти к разделу на другом сайте</a></li>
+    <li><p>15)</p></li>
+    <li>
+      <img src="map-image.jpg" alt="Карта с областями" usemap="#my-map">
+      <map name="my-map">
+          <area shape="rect" coords="0,0,100,100" href="index.html" alt="прямоугольник">
+          <area shape="circle" coords="150,150,50" href="index.html" alt="круг">
+      </map>
+    </li>
+    <li><a href="">16) Пустая сыллка</a></li>
+    <li><a>17) Сыллка без href</a></li>
+    <li><a href="https://www.kubsu.ru/" rel="nofollow">18) Сыллка с запретом перехода</a></li>
+    <li><noindex><a href="">19) Сыллка запрещенная для индексации</a></noindex></li>
+    <li>
+      <p>20)</p>
+      <ol>
+        <li><a href="index.html" title="Первая">Ссылка 1</a></li>
+        <li><a href="index.html" title="Вторая">Ссылка 2</a></li>
+      </ol>
+    </li>
+    <li><a href="ftp://username:password@example.ru/file.zip">21) Скачать файл</a></li>
+  </ul>
+
+  <!-- Форма -->
+
+  <h2 style="margin-top: 40px">Форма</h2>
+
+  <form action="/"
+      method="POST">
+
+      <label>
+        ФИО:<br />
+        <input name="field-name-1"
+          placeholder="Васькин Василий Васильевич" />
+      </label><br />
+
+      <label>
+        Телефон:<br />
+        <input name="field-tel"
+          type="tel"
+          placeholder="+7**********" />
+      </label><br />
+
+      <label>
+        Текстовое поле email:<br />
+        <input name="field-email"
+          type="email"
+          placeholder="Введите вашу почту" />
+      </label><br />
+
+      <label>
+        Дата рождения:<br />
+        <input name="field-date"
+          value="2006-08-13"
+          type="date" />
+      </label><br />
+
+        Пол:<br />
+      <label><input type="radio" checked="checked"
+        name="radio-group-1" value="Значение1" />
+        Мужской</label>
+      <label><input type="radio"
+        name="radio-group-1" value="Значение2" />
+        Женский</label><br />
+
+      <label>
+        Ваш любимый язык программирования:
+        <br />
+        <select name="field-name-4[]"
+          multiple="multiple">
+          <option value="Значение1">Pascal</option>
+          <option value="Значение2" selected="selected">C</option>
+          <option value="Значение3" selected="selected">C++</option>
+          <option value="Значение4" selected="selected">JavaScript</option>
+          <option value="Значение5" selected="selected">PHP</option>
+          <option value="Значение6" selected="selected">Python</option>
+          <option value="Значение7" selected="selected">Java</option>
+          <option value="Значение8" selected="selected">Haskel</option>
+          <option value="Значение9" selected="selected">Clojure</option>
+          <option value="Значение10" selected="selected">Prolog</option>
+          <option value="Значение11" selected="selected">Scala</option>
+          
+        </select>
+      </label><br />
+
+      <label>
+        Биография:<br />
+        <textarea name="field-name-2">тут ваша биография</textarea>
+      </label><br />
+
+      Подтвердите пожалуйста:<br />
+      <label><input type="checkbox" checked="checked"
+        name="check-1" />
+        с контрактом ознакомлен (а)</label><br />
+
+      <input type="submit" value="Сохранить" />
+    </form>
+
+
+  <p style="margin-top: 1000px" id="element_id">Фрагмент страницы</p>
+
+  
+</body>
+</html>
